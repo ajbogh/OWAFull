@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "OWAFull",
+  "description": "Allows Chrome to use the full version of Outlook Web Access, instead of being stuck in the light version (some ActiveX controls may not work).",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ajbogh/OWAFull",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/owa/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
