@@ -7,7 +7,7 @@ var requestFilter = {
 chrome.webRequest.onBeforeSendHeaders.addListener(function(details) {
 	var headers = details.requestHeaders;
 	var i;
-	var ieUserAgent = "Mozilla/5.0 (MSIE 9.0; Windows NT 6.1; Trident/5.0)";
+        var ieUserAgent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/29.0";
 	var loggedIn = false;
 	var bkg = chrome.extension.getBackgroundPage();
 
